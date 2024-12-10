@@ -10,9 +10,9 @@ void print_field(uint1 *field, size_t size) {
     for (size_t y = 0; y < size; ++y) {
         for (size_t x = 0; x < size; ++x) {
             if (field[y * SIZE + x]) {
-                printf("X");
-            } else {
                 printf("O");
+            } else {
+                printf(" ");
             }
         }
         printf("\n");
